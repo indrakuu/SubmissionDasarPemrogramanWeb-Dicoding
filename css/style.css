@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+header{
+	display: inline;
+}
+body{
+	font-family: 'quicksand', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+.head{
+	font-size: 20px;
+	padding: 10px;
+	background-color: #FFA000;
+	text-align: center;
+	color: white;
+}
+
+/*------- Navigasi --------*/
+nav{
+	padding: 2px;
+	background-color: #FFC107;
+	position: relative;
+	top: 0px;
+}
+li, .dropdown{
+	display: inline-block;
+}
+li a{
+	margin: 10px;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+}
+li a:hover{
+	transition: 0.1s;
+	border-radius: 5px;
+	color: white;
+	background-color: #FFA000;
+}
+.dropdown:hover .dropdown-content {
+  display:block;
+  }
+.dropdown-content {
+	transition: 0.1s;
+	display: none;
+  	position: absolute;
+  	background-color: white;
+  	margin-top: 11px;
+  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  	border-radius: 5px;
+}
+.dropdown-content a {
+	transition: 0.2s;
+  	color: black;
+  	padding: 10px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+}
+
+/*-------- Navigasi ---------*/
+
+/*--------- Halaman Artikel ----------*/
+main{
+	padding: 20px;
+	overflow: auto;
+	text-align: left;
+}
+#content{
+	float: left;
+	width: 75%;
+}
+
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+	border-radius: 10px;
+	padding: 20px;
+	margin:10px 0px 10px 0px;
+}
+.featured-image{
+	width: 100%;
+	max-height: 500px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 5px;
+}
+/*--------- Halaman Artikel ---------*/
+
+/* -------- Halaman Aside ----------*/
+aside{
+	float: right;
+	width: 24%;
+}
+.profile header{
+	text-align: center;
+}
+.profile img{
+	width: 100px;
+	border-radius: 4px;
+}
+.sosmed-flex{
+	display: flex;
+}
+.sosmed-flex img{
+	width: 40px;
+	cursor: pointer;
+}
+.icon{
+	text-align: center;
+	flex-basis: 50%;
+}
+td{
+	padding-left: 50px;
+}
+
+/*-------- Halaman Aside ----------*/
+
+/*-------- Footer ---------*/
+.nav-footer{
+	text-align: center;
+	padding: 2px;
+	background-color: #FFC107;
+	position: relative;
+	top: 0px;
+	text-decoration: none;
+}
+.footer{
+	text-align: center;
+	padding: 50px 50px 50px 100px;
+	background-color: #FFA000;
+	color: white;	
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+}
+/*-------- Footer ----------*/
+
+/*--------- Responsive -------*/
+@media screen and (max-width: 1000px){
+	#content, aside{
+		width: 100%;
+		padding: 0;
+	}
+	h3.info{
+		text-align: center;
+	}
+	th{
+		padding-left: 15%;
+		width: 100%;
+	}
+	td{
+		padding-right: 15%;
+	}
+}
+/*-------- Responsive --------*/
